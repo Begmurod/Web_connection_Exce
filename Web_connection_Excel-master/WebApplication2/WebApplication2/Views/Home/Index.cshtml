@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+<form action="/Home/Contact" method="post">
+    <h4 align="center">Исходные данные</h4>
+    <h5 align="center">Коэффициент теплопроводности</h5>
+    <table border="1" align="center" width="400">
+
+        <tr>
+            <td bgcolor="#ffcc"><h5>Название</h5></td>
+            <td bgcolor="#ffcc"><h5>Значение</h5></td>
+            <td bgcolor="#ffcc00"><h5>Измерение</h5></td>
+        </tr>
+        <tr>
+            <td>-материала огнеупорной стенки (λогн);</td>
+            <td><input type="text" step="any" name="data.B5" value="24" /></td>
+            <td>Вт/(м* <small>°</small>С)</td>
+        </tr>
+        <tr>
+            <td>-1-го материала изоляции (λ1)</td>
+            <td><input type="text" step="any" name="data.B6" value="1" /></td>
+            <td>Вт/(м* <small>°</small>С)</td>
+        </tr>
+        <tr>
+            <td>-2-го материала изоляции (λ2)</td>
+            <td><input type="text" step="any" name="data.B7" value="0,2" /></td>
+            <td>Вт/(м* <small>°</small>С)</td>
+        </tr>
+    </table>
+    <h5 align="center">Стоимость материала изоляции</h5>
+    <table border="1" align="center" width="400">
+        <tr>
+            <td bgcolor="#ffcc"><h5>Название</h5></td>
+            <td bgcolor="#ffcc"><h5>Значение</h5></td>
+            <td bgcolor="#ffcc00"><h5>Измерение</h5></td>
+        </tr>
+        <tr>
+            <td>-1-го материала (С1)</td>
+            <td><input type="text" step="any" name="data.B9" value="1" /></td>
+            <td> усл.ед./м<small>2</small></td>
+        </tr>
+        <tr>
+            <td>-1-го материала (С1)</td>
+            <td><input type="text" step="any" name="data.B10" value="8" /></td>
+            <td> усл.ед./м<small>2</small></td>
+        </tr>
+    </table>
+    <h5 align="center">Температура</h5>
+    <table border="1" align="center" width="400">
+        <tr>
+            <td bgcolor="#ffcc"><h5>Название</h5></td>
+            <td bgcolor="#ffcc"><h5>Значение</h5></td>
+            <td bgcolor="#ffcc00"><h5>Измерение</h5></td>
+        </tr>
+        <tr>
+            <td>-рабочей среды в печи (t')</td>
+            <td><input type="text" step="any" name="data.B13" value="600" /></td>
+            <td><small>°</small>С</td>
+        </tr>
+        <tr>
+            <td>-окружающей среды (t'')</td>
+            <td><input type="text" step="any" name="data.B14" value="20" /></td>
+            <td><small>°</small>С</td>
+        </tr>
+    </table>
+    <table border="1" align="center" width="400">
+        <tr>
+            <td bgcolor="#ffcc"><h5>Название</h5></td>
+            <td bgcolor="#ffcc"><h5>Значение</h5></td>
+            <td bgcolor="#ffcc00"><h5>Измерение</h5></td>
+        </tr>
+        <tr>
+            <td>Наружной поверхности (t<small>НПmax</small> )</td>
+            <td><input type="text" step="any" name="data.B15" value="50" /></td>
+            <td><small>°</small>С</td>
+        </tr>
+    </table>
+    <h5 align="center">Коэффициент теплоотдачи</h5>
+    <table border="1" align="center" width="400">
+       
+        <tr>
+            <td bgcolor="#ffcc"><h5>Название</h5></td>
+            <td bgcolor="#ffcc"><h5>Значение</h5></td>
+            <td bgcolor="#ffcc00"><h5>Измерение</h5></td>
+        </tr>
+        <tr>
+            <td>-внутренний (α<small>раб</small>)</td>
+            <td><input type="text" step="any" name="data.B17" value="500" /></td>
+            <td>Вт/(м<small>2</small>* <small>°</small>С)</td>
+        </tr>
+        <tr>
+            <td>-наружный (α<small>нар</small>)</td>
+            <td><input type="text" step="any" name="data.B18" value="100" /></td>
+            <td>Вт/(м<small>2</small>* <small>°</small>С)</td>
+        </tr>
+
+        <tr>
+            <td>Толщина изоляции x<small>2</small></td>
+            <td><input type="text" step="any" name="data.B22" value="4" /></td>
+            <td>м</td>
+
+        </tr>
+        <tr>
+            <td>Толщина изоляции x<small>1</small></td>
+            <td><input type="text" step="any" name="data.B23" value="2" /></td>
+            <td>м</td>
+
+        </tr>
+    </table>
+    <table align="center" width="400">
+        <tr>
+            <td>
+                <button style=" margin-top: 10%; margin-left: 150%;  text-align: center;border: 1px solid purple;background: #E6E6FA; font-size: 18px" type="submit"> Расчет </button>
+            </td>
+
+        </tr>
+    </table>
+</form>

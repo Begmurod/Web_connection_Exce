@@ -1,0 +1,47 @@
+﻿@model ClassRas
+
+@{
+    ViewData["Title"] = "Contact";
+}
+<div class="text-center">
+<h1 class="display-4"><b>Результат расчета</b></h1>
+<form action="">
+    <table border="1" align="center">
+        <tr>
+            <td bgcolor="#ffcc"><h4>Название</h4></td>
+            <td bgcolor="#ffcc"><h4>Значение</h4></td>
+            <td bgcolor="#ffcc00"><h4>Измерение</h4></td>
+        </tr>
+        <tr>
+            <td>Целевая значения</td>
+            <td>@Model.B19</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Ограничение на температуру наружной стенки</td>
+            <td>@Model.B20</td>
+            <td><small>°</small>С</td>
+        </tr>
+        <tr>
+            <td>Толщина огнеупорнойстенки</td>
+            <td>@Model.B21</td>
+            <td>м</td>
+        </tr>
+        <tr>
+            <td>Толщина изоляции x<small>2</small></td>
+            <td>@Model.B22</td>
+            <td>м</td>
+        </tr>
+        <tr>
+            <td>Толщина изоляции x<small>1</small></td>
+            <td>@Model.B23</td>
+            <td>м</td>
+        </tr>
+        <tr>
+            <td>Суммарная толщина изоляции (расчетная)</td>
+            <td>@Model.B24</td>
+            <td>м</td>
+        </tr>
+    </table>
+</form>
+</div>
